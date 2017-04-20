@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up Today!</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body style="background-color: #000;">
+<div class="container">
+    <div class="jumbotron">
+        <h2 class="text-center">Welcome to EmBay</h2>
+        <h3 class="text-center">"Where Bidders Win Big"</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+           <div class="panel panel gefault">
+               <div class="panel-body">
+                   <h4 class="text-center"><strong>Today's Sale</strong>: Pure Vegetarian Based Coding Knowledge</h4>
+               </div>
+           </div>
+        </div>
+    </div>
+    <!--Current Product-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <img src="https://cdn-images-1.medium.com/max/800/1*YMrnR5kQ_R602fbWHHWy2g.jpeg" class="img-responsive thumbnail center-block" alt="image" />
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class=""><strong>Highest Bidder</strong>: <span id="highestBidder"></span></h5>
+                            <h5 class=""><strong>Current Price</strong>: <span id="highestPrice"></span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Where Make a Bid-->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Make your Bid</h4>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="bidderName">Your Name</label>
+                            <input type="text" class="form-control" id="bidderName">
+                        </div>
+                        <div class="form-group">
+                            <label for="bidderPrice">Your Price</label>
+                            <input type="number" class="form-control" id="bidderPrice">
+                        </div>
+                        <button type="submit" class="btn btn-danger" id="submitBid">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
